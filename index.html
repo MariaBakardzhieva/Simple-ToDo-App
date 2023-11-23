@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <title>Simple Todo App</title>
+  </head>
+  <body>
+    <div class="todo-app-container">
+      <div class="todo-app">
+        <h1 class="todo-app-title">
+          Simple Todo App
+          <img src="images/icon.png" alt="icon" />
+        </h1>
+        <div class="row">
+          <input
+            class="todo-app-input"
+            type="text"
+            name="text"
+            id="input-box"
+            placeholder="Add your text..."
+          />
+          <button class="todo-app-button" id="addButton">
+            Add
+          </button>
+        </div>
+        <ul class="todo-app-list" id="todo-list"></ul>
+        <div class="todo-app-list-count">
+          Total items: <span id="itemCount">0</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
